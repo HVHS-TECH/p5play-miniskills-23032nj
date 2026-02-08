@@ -8,15 +8,27 @@
 // setup()
 /*******************************************************/
 function setup() {
-	console.log("setup: ");
+console.log("setup: ");
+
+cnv = new Canvas(800, 800);
+
+milo = new Sprite(200, 400, 45, 75, '5');
+milo.color = '#a7cebc';
+milo.rotationSpeed = 2;
+milo.vel.x = 2;
+
+
+vader = new Sprite(600, 400, 60,);
+vader.color = '#698fe7';
+
+
 
 }
-	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+background ('#f2e0f9');	
 }
 
 /*******************************************************/
