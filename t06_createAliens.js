@@ -25,6 +25,19 @@ world.gravity.y = 10;
 //platform_2.color = '#e96c6c';
 //platform_2.rotation = -20;
 
+walls() 
+
+for (i = 0; i < 100; i++) {
+  alien = new Sprite(110, 400, 30, 30, 'd');
+  alien.vel.x = 3;
+  alien.vel.y = 4;
+  alien.bounciness = 1;
+  alien.friction = 0;
+}
+
+}
+
+function walls () {
 wallLH  = new Sprite(0, height/2, 8, height, 'k');
 wallLH.color = '#f70606';
 
@@ -37,15 +50,18 @@ wallTop.color = '#06f742';
 wallBottom = new Sprite(width/2, 0, width, 8, 'k');
 wallBottom.color = '#0632f7';
 
-ball_1 = new Sprite(width/2, height/2, 50, 'd');
-ball_1.color = 'cyan';
-ball_1.vel.x = 2;
+//ball_1 = new Sprite(width/2, height/2, 50, 'd');
+//ball_1.color = 'cyan';
+//ball_1.vel.x = 2;
 //ball_1.vel.y = 2;
-ball_1.bounciness = 2.5;
-ball_1.friction = 0;
-ball_1.drag = 0;
-
+//ball_1.bounciness = 2.5;
+//ball_1.friction = 0;
+//ball_1.drag = 0;
 }
+
+
+
+
 /*******************************************************/
 // draw()
 /*******************************************************/
