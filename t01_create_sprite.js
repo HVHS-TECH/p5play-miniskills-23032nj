@@ -24,7 +24,7 @@ height = random(300,600);
 
 // and the sprites keep changing too!
 spriteX= random(50,150);
-spriteY=  random(50,150);  ;
+spriteY=  random(50,150);  
 
 cnv = new Canvas(width, height);
 
