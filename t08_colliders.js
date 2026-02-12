@@ -37,6 +37,12 @@ for (i = 0; i < 100; i++) {
   alienGroup.add(alien);
 }
 
+alienGroup.collides(ball_1, func2Call);
+
+function func2call (alien, ball_1) {
+alien.remove();  
+}
+
 }
 
 function walls () {
