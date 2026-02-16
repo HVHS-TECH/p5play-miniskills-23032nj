@@ -52,13 +52,13 @@ wallTop.color = '#06f742';
 wallBottom = new Sprite(width/2, 0, width, 8, 'k');
 wallBottom.color = '#0632f7';
 
-//ball_1 = new Sprite(width/2, height/2, 50, 'd');
-//ball_1.color = 'cyan';
-//ball_1.vel.x = 2;
-//ball_1.vel.y = 2;
-//ball_1.bounciness = 2.5;
-//ball_1.friction = 0;
-//ball_1.drag = 0;
+ball_1 = new Sprite(width/2, height/2, 50, 'd');
+ball_1.color = 'cyan';
+ball_1.vel.x = 2;
+ball_1.vel.y = 2;
+ball_1.bounciness = 2.5;
+ball_1.friction = 0;
+ball_1.drag = 0;
 }
 
 /*******************************************************/

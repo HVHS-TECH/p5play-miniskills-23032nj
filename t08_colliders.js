@@ -27,23 +27,33 @@ world.gravity.y = 10;
 
 walls() 
 
+ball_1 = new Sprite(width/2, height/2, 50, 'd');
+ball_1.color = 'cyan';
+ball_1.vel.x = 2;
+ball_1.vel.y = 2;
+ball_1.bounciness = 1;
+ball_1.friction = 0;
+ball_1.drag = 0;
+
 alienGroup = new Group();
-for (i = 0; i < 100; i++) {
+for (i = 0; i < 30; i++) {
   alien = new Sprite(110, 400, 30, 30, 'd');
   alien.vel.x = 3;
   alien.vel.y = 4;
-  alien.bounciness = 1;
+  alien.bounciness = 0.5;
   alien.friction = 0;
   alienGroup.add(alien);
 }
 
 alienGroup.collides(ball_1, func2Call);
 
-function func2call (alien, ball_1) {
-alien.remove();  
-}
+function func2Call(alien, ball_1) {
+alien.remove();
+} 
 
 }
+
+
 
 function walls () {
 wallLH  = new Sprite(0, height/2, 8, height, 'k');
@@ -57,14 +67,6 @@ wallTop.color = '#06f742';
 
 wallBottom = new Sprite(width/2, 0, width, 8, 'k');
 wallBottom.color = '#0632f7';
-
-ball_1 = new Sprite(width/2, height/2, 50, 'd');
-ball_1.color = 'cyan';
-ball_1.vel.x = 2;
-ball_1.vel.y = 2;
-ball_1.bounciness = 2.5;
-ball_1.friction = 0;
-ball_1.drag = 0;
 }
 
 /*******************************************************/
@@ -73,7 +75,6 @@ ball_1.drag = 0;
 function draw() {
 background ('#f2e0f9');	
 }
-
 /*******************************************************/
 //  END OF APP
 /*******************************************************/
