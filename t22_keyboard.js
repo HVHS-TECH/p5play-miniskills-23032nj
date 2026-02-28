@@ -22,7 +22,7 @@ cnv = new Canvas(800, 800);
 
 spriteOne = new Sprite(400, 400, 50, 50, 'd');
 spriteOne.color = '#698fe7';
-spriteOne.rotationSpeed = 2;
+spriteOne.rotationSpeed = 3;
 
 }
 
