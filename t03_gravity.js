@@ -11,16 +11,13 @@ function setup() {
 console.log("setup: ");
 
 cnv = new Canvas(800, 800);
-world.gravity.y = 10;
 
-milo = new Sprite(200, 400, 45, 75, 'd');
-milo.color = '#a7cebc';
-milo.rotationSpeed = 2;
-milo.vel.x = 2;
-
-
-vader = new Sprite(600, 400, 60,);
-vader.color = '#698fe7';
+for (var row = 0; row < 4; row++) {
+for (var i = 0; i < 10; i++) {
+  var block = new Sprite(i*80 + 40, row*45, 75, 30);
+  block.color = color(255, 182, 193); 
+}
+}
 
 
 
